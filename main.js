@@ -1,14 +1,25 @@
-const usuario = {
-    nome: 'Lucas',
-    idade: 20,
-    endereco:{
-        cidade:'Pelotas',
-        estado: 'Rio Grande do Sul',
-    },
-};
+//REST
 
-function mostraNome({ nome , idade }) {
-    console.log(nome, idade);
+function soma(a, b,...params) {
+    return params;
 }
 
-mostraNome(usuario);
+console.log(soma(1, 3, 4, 5, 6, 8));
+
+//SPREAD 
+
+// const arr1 = [1, 2, 3];
+// const arr2 = [4, 5, 6];
+// const arr3 = [...arr1, ...arr2];
+
+// console.log(arr3);
+
+const usuario1 = {
+    nome: 'Lucas',
+    idade: 20,
+    empresa: 'SHP E-Spots'
+}
+
+const usuario2 = { ...usuario1, nome: 'Gabriel'};
+
+console.log(usuario2);
